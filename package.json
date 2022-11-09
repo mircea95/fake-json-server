@@ -1,0 +1,22 @@
+{
+  "name": "fake-json-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": { // <===
+    "start": "node server.js" // <===
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mircea95/fake-json-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mircea95/fake-json-server/issues"
+  },
+  "homepage": "https://github.com/mircea95/fake-json-server#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
