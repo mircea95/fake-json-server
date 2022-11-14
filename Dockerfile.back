@@ -1,0 +1,19 @@
+FROM nginx:stable-alpine
+RUN apk update && apk upgrade
+RUN apk add git nodejs npm
+RUN npm install pm2 -g
+
+COPY default.conf /etc/nginx/conf.d/default.conf
+WORKDIR /home/tls
+COPY . .
+RUN npm install
+# CMD ["pm2-runtime", "server.js", "--no-daemon"]
+# CMD [ "pm2", "--name", "FakeJson", "start", "npm", "--", "start"]
+# CMD [ "npm", "start", "--no-daemon" ]
+# CMD [ "pm2-runtime", "start", "server.js" ]
+# CMD ["pm2", "start", "--no-daemon"]
+# CMD ["pm2", "start", "process.yml", "--no-daemon"]
+# CMD [ "pm2-runtime", "start", "npm", "--", "start", "&&" ]
+# CMD ["pm2-runtime", "process.yml"]
+# pm2 --name FakeJson start npm -- start
+EXPOSE 80 

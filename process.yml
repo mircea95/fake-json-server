@@ -1,0 +1,8 @@
+apps:
+  - name     : 'backend'
+    script   : 'server.js'
+    cwd      : './'
+    exec_mode: 'cluster'
+    instance : 'max'
+    env      :
+      NODE_ENV: production
