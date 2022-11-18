@@ -196,5 +196,52 @@
         ]
       }
     }
-  ]
+  ],
+  "avgCostsPerUser": {
+    "pricePerYear": "1,257",
+    "graphData": {
+      "discipline": [
+        "Project Management",
+        "Development",
+        "Applications management",
+        "Testing",
+        "Creative services",
+        "Data",
+        "Business analysis",
+        "Architecture",
+        "Placeholder",
+        "Placeholder",
+        "Placeholder",
+        "Placeholder",
+        "Placeholder",
+        "Placeholder",
+        "Placeholder",
+        "Placeholder",
+        "Placeholder",
+        "Placeholder",
+        "Placeholder"
+      ],
+      "data": [
+        1212,
+        1210,
+        1190,
+        1173,
+        1121,
+        1100,
+        1000,
+        900,
+        800,
+        700,
+        600,
+        500,
+        400,
+        300,
+        200,
+        100,
+        50,
+        25,
+        10
+      ]
+    }
+  }
 }
